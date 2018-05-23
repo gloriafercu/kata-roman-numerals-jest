@@ -1,6 +1,5 @@
 function application() {
 
-
 	function romanizerNumerals(number) {
 		var numerals = [
 			{ value: 1000, roman: 'M' },
@@ -17,7 +16,6 @@ function application() {
 			{ value: 4, roman: 'IV' },
 			{ value: 1, roman: 'I' }
 		];
-
 		var remaining = number;
 		var result = '';
 
@@ -34,13 +32,29 @@ function application() {
 				remaining -= numeral.value;
 			}
 		});
-
 		return result;
 	}
 
+	function getRomanNumeral(event) {
+		event.preventDefault();
+		var result = document.querySelector('#result__operation');
+		var romanNum = romanizerNumerals(event.target[0].value);
+		result.innerHTML = romanNum;
+	}
+
+	function start() {
+		var form = document.querySelector('#js-form');
+		form.addEventListener('submit', function() {
+			getRomanNumeral(event);
+		});
+	}
+
 	return {
+		start: start,
 		romanizerNumerals: romanizerNumerals
 	}
 }
 
-module.exports = application;
+if (typeof module !== 'undefined') {
+	module.exports = application;
+}

@@ -11,15 +11,15 @@
 
 <body>
 	<main class="wrapper">
-		<form class="form">
+		<form class="form" id="js-form">
 			<label for="number" class="number__input">Introduce un número</label>
-			<input type="number" id="number" required>
+			<input type="text" id="number" required>
 			<button class="button__submit">Enviar</button>
 		</form>
-		<div class="result__operation"></div>
+		<div id="result__operation"></div>
 	</main>
 	<script src="js/index.js" charset="utf-8"></script>
-	<script src="js/main.js" charset="utf-8"></script>
+	<script>application().start();</script>
 </body>
 
 </html>
