@@ -1,5 +1,7 @@
 function application() {
 
+var result;
+
 	function romanizerNumerals(number) {
 		var numerals = [
 			{ value: 1000, roman: 'M' },
@@ -37,8 +39,9 @@ function application() {
 
 	function getRomanNumeral(event) {
 		event.preventDefault();
-		var result = document.querySelector('#result__operation');
+		result = document.querySelector('#result__operation');
 		var romanNum = romanizerNumerals(event.target[0].value);
+		result.classList.toggle('hidden');
 		result.innerHTML = romanNum;
 	}
 
