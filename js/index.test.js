@@ -1,4 +1,3 @@
-//const application = require('./index');
 import application from './index';
 
 describe ('RomanNumerals', () => {

@@ -1,6 +1,5 @@
 export default function application() {
 
-//function application() {
 var result;
 
 	function romanizerNumerals(number) {
@@ -58,7 +57,3 @@ var result;
 		romanizerNumerals: romanizerNumerals
 	}
 }
-
-// if (typeof module !== 'undefined') {
-// 	module.exports = application;
-// }
