@@ -1,0 +1,14 @@
+{
+  "name": "roman-numerals",
+  "version": "1.0.0",
+  "description": "roman numerals",
+  "main": "index.js",
+  "scripts": {
+    "start": "jest --watch npm jest"
+  },
+  "author": "Gloria",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
