@@ -1,5 +1,6 @@
-function application() {
+// export default function application() {
 
+function application() {
 var result;
 
 	function romanizerNumerals(number) {

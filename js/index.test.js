@@ -1,4 +1,5 @@
 const application = require('./index');
+// import application from './index';
 
 describe ('RomanNumerals', () => {
 	test('converts 1 to Roman numeral (I)', () => {
