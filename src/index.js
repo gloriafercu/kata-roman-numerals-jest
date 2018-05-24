@@ -1,6 +1,6 @@
 function application() {
 
-var result;
+	var result;
 
 	function romanizerNumerals(number) {
 		var numerals = [
