@@ -1,4 +1,4 @@
-import application from './index.js';
+import application from '../src/index.js';
 
 describe ('RomanNumerals', () => {
 	test('converts 1 to Roman numeral (I)', () => {

@@ -26,9 +26,12 @@
 			<div class="result__operation hidden" id="result__operation"></div>
 		</div>
 	</main>
-	<script src="js/index.js" ></script>
 
-	<script >application().start();</script>
+	<script type="module">
+		import { application } from '../src/index.js';
+		application().start();
+	</script>
+
 </body>
 
 </html>
