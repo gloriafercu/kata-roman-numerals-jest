@@ -1,4 +1,3 @@
-//export function application(){
 function application() {
 
 var result;
@@ -54,15 +53,11 @@ var result;
 	}
 
 	return {
-		start,
-		romanizerNumerals: romanizerNumerals,
-		application
+		start: start,
+		romanizerNumerals: romanizerNumerals
 	}
 }
-export {application};
-//module.exports = application;
 
-// be able to import the file in node (para que me funcionen los test)
-if (typeof(module) !== 'undefined'){
-    module.exports = application;
+if (typeof module !== 'undefined') {
+	module.exports = application;
 }
