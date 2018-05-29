@@ -1,4 +1,4 @@
-function application() {
+export default function application() {
 
 var result;
 
@@ -56,8 +56,4 @@ var result;
 		start: start,
 		romanizerNumerals: romanizerNumerals
 	}
-}
-
-if (typeof module !== 'undefined') {
-	module.exports = application;
 }
